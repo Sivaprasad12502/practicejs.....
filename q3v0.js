@@ -37,6 +37,8 @@ matrixaddition=(matrix,matrixb)=>{
 //     [16,17,18]
 // ]))
 
+// array comparison
+
 arrayEqual=(arr1,arr2)=>{
   if(arr1.length!==arr2.length){
     return false;
@@ -54,6 +56,16 @@ arrayEqual=(arr1,arr2)=>{
   }
   return true;
 }
+
+
+
+// test case
+
+
+
+
+
+
 
 test=()=>{
     const matrix = [

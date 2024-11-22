@@ -19,6 +19,9 @@ armstrongNumber=(number)=>{
 console.log(armstrongNumber(43));
 
 
+// test case
+
+
 test=()=>{
     let input=[34,153,1];
     let output=[false,true,true];

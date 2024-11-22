@@ -12,6 +12,10 @@ return range;
 console.log(range([1,3,5,]))
 
 
+// test case  
+
+
+
 test=()=>{
     let input=[[1,3,5],[4,6,7]];
     let output=[4,3];

@@ -26,6 +26,9 @@ printPrime=(limit)=>{
 
 console.log(printPrime(50));
 
+
+// test case 
+
 test=()=>{
     let input=[[10],[25]];
     let ouput=[checkPrime(10),checkPrime(25)];

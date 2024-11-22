@@ -12,6 +12,9 @@ arrayAverage=(arry)=>{
 console.log(arrayAverage([6,7,8,9,10]))
 
 
+
+// test case
+
 test=()=>{
     let input=[[1,2,3,4,5],[6,7,8,9,10]];
     let output=[3,8];

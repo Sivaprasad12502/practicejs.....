@@ -9,6 +9,11 @@ areaOfAtriangle=(h,b)=>{
 
 }
 console.log(areaOfAtriangle(6,7))
+
+// test case 
+
+
+
 test=()=>{
     let input=[[2,3],[6,7]];
     let output=[3,21];

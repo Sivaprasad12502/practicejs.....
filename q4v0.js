@@ -8,6 +8,10 @@ area=(l,w)=>{
 }
 console.log(area(4,3));
 
+
+
+// test case
+
 test=()=>{
     let input=[[4,3],[5,5]];
     let output=[12,25];

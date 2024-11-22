@@ -12,6 +12,10 @@ fibonacci=(n)=>{
 
 console.log(fibonacci(12))
 
+
+
+//test case
+
 test=()=>{
     let input=[13,6,2];
     let output=[fibonacci(13),fibonacci(6),fibonacci(2)];

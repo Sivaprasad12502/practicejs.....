@@ -13,6 +13,9 @@ fact=(n)=>{
 console.log(fact(9))
 
 
+// test cases 
+
+
 test=()=>{
     let input=[5,9];
     let output=[120,362880];

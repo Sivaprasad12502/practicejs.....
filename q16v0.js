@@ -18,6 +18,10 @@ console.log(palindrome('malayalam'))
 
 
 
+// test case
+
+
+
 test=()=>{
    let input=['malayalam','hello'];
    let output=[true,false];

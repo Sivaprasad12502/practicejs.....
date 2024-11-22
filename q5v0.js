@@ -22,6 +22,10 @@ diagonalMatrix=(matrix)=>{
 // console.log(diagonalMatrix());
 
 
+
+// test case
+
+
 test=()=>{
     let input = [
         [[1,0,0],[0,5,0],[0,0,9]],

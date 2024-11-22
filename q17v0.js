@@ -20,6 +20,11 @@ gcd=(a,b)=>{
 }
 console.log(gcd(10,5))
 
+
+// test case
+
+
+
 test=()=>{
     let input=[[48,18],[10,5]];
     let output=[6,3];

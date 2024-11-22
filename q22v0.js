@@ -16,6 +16,9 @@ duplicatArayy=(arr)=>{
 console.log(duplicatArayy(arr=[1,2,4,3,1]))
 
 
+// array comparison
+
+
 arayEqual=(arr,arr1)=>{
     if(arr.length!==arr1.length){
         return false
@@ -28,6 +31,10 @@ arayEqual=(arr,arr1)=>{
     return true
 
 }
+
+
+
+// test case 
 
 test=()=>{
     let input=[1,2,4,3,5,2,4,5,3];

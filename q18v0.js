@@ -28,6 +28,8 @@ lcm=(a,b)=>{
 }
 console.log(lcm(20,12))
 
+// test case
+
 
 test=()=>{
     let input=[[48,18],[20,12]];

@@ -29,6 +29,11 @@ perfectNumber=(num)=>{
 console.log(perfectNumber(28));
 
 
+
+// test case 
+
+
+
 test=()=>{
     let input=[28,55];
     let ouput=[true,false]

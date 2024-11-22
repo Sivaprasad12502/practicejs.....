@@ -22,6 +22,10 @@ mostRepeatedValue=(arry)=>{
 
 console.log(mostRepeatedValue(arry=[1,2,3,5,1]))
 
+
+// test case 
+
+
 test=()=>{
     let input=[[1,2,3,5,1,3,9,3,8,3,0,8,3],[1,2,3,5,1]];
     let ouput=[3,1];

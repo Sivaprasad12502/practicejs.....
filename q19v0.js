@@ -21,6 +21,10 @@ vowelsInString=(str)=>{
 console.log(vowelsInString('si'));
 
 
+
+// test cases 
+
+
 test=()=>{
     let input=["malayalam","si"];
     let ouput=[4,1];

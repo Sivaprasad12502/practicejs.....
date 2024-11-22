@@ -18,7 +18,7 @@ transposeMatrix=(matrix)=>{
 console.log(transposeMatrix(matrix=[[1,2,3],[4,5,6],[3,4,6]]));
 
 
-
+// test case
 
 arrayEqual=(arr1,arr2)=>{
     if(arr1.length!==arr2.length){

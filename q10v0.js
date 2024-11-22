@@ -13,6 +13,9 @@ perfectSquare=(n)=>{
 perfectSquare(26)
 
 
+// test case 
+
+
 Test=()=>{
     let input=[[26],[25]];
     let output=['not perfect','perfect'];
