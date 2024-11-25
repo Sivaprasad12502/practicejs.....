@@ -3,8 +3,14 @@
 
 
 identityMatrix=(matrix)=>{
+    if(!Array.isArray(matrix)){
+        return "enter elements in array"
+    }
   for(let i=0;i<matrix.length;i++){
     for(let j=0;j<matrix[i].length;j++){
+        if(typeof matrix[i][j]!=='number'){
+            return " in the array enter only numbers"
+        }
         if(i===j){
             if(matrix[i][j]!==1){
                 return false;

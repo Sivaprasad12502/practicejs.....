@@ -4,6 +4,9 @@
 
 
 armstrongNumber=(number)=>{
+    if(typeof number !=='number'){
+        return "enter a valid number to check"
+    }
     let numStr= number.toString();
     let sum=0;
     for(let i=0;i<numStr.length;i++){
@@ -16,7 +19,7 @@ armstrongNumber=(number)=>{
     return false
 
 }
-console.log(armstrongNumber(43));
+console.log(armstrongNumber(153,));
 
 
 // test case

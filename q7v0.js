@@ -4,18 +4,24 @@
 
 
 transposeMatrix=(matrix)=>{
+    if(!Array.isArray(matrix)){
+        return "enter elements in the array"
+    }
  
   let transposed=[];
   for(let i=0;i<matrix[0].length;i++){
     transposed[i]=[];
     for(let j=0;j<matrix.length;j++){
+        if(typeof matrix[j][i]!=='number'){
+            return "enter only numbers in the array"
+        }
         transposed[i][j] = matrix[j][i];
     }
 
   }
   return transposed;
 };
-console.log(transposeMatrix(matrix=[[1,2,3],[4,5,6],[3,4,6]]));
+console.log(transposeMatrix(matrix=[[0,2,3],[4,5,6],[3,4,6]]));
 
 
 // test case

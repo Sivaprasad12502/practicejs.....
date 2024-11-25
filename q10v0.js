@@ -2,6 +2,9 @@
 
 
 perfectSquare=(n)=>{
+    if(typeof n !=='number'){
+        return "enter a valid number"
+    }
     n=Math.sqrt(n)
     if(Number.isInteger(n)){
         return('perfect')
@@ -10,17 +13,17 @@ perfectSquare=(n)=>{
     }
 
 }
-perfectSquare(26)
+console.log(perfectSquare(26))
 
 
 // test case 
 
 
 Test=()=>{
-    let input=[[26],[25]];
+    let input=[[26], [25]];
     let output=['not perfect','perfect'];
     for(let i=0;i<input.length;i++){
-        let result=perfectSquare(input[i]);
+        let result=perfectSquare(input[i][0]);
         if(result===output[i]){
             console.log('test is passed')
         }else{

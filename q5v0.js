@@ -2,6 +2,9 @@
 
 
 diagonalMatrix=(matrix)=>{
+    if(!Array.isArray(matrix)){
+        return "enter a array"
+    }
     const row=matrix.length;
     const column=matrix[0].length;
     for(let i=0;i<row;i++){
@@ -9,6 +12,9 @@ diagonalMatrix=(matrix)=>{
         for(let j=0;j<column;j++){
             // console.log([i][j])
             // console.log(matrix[i][j])
+            if(typeof matrix[i][j]!=='number'){
+                return "enter only numbers"
+            }
 
             if(i!==j&&matrix[i][j]!==0){
                 return false;
@@ -18,7 +24,10 @@ diagonalMatrix=(matrix)=>{
     return true;
 }
 
-// diagonalMatrix()
+console.log(diagonalMatrix(
+        [[1,0,0],[0,5,0],[0,0,9]],
+        
+     ))
 // console.log(diagonalMatrix());
 
 

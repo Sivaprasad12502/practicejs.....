@@ -2,6 +2,9 @@
 
 
 matrixaddition=(matrix,matrixb)=>{
+  if(!Array.isArray(matrix)||!Array.isArray(matrixb)){
+    return "enter an array"
+  }
     // let matrix =[
     //     [1,2,3],
     //     [4,5,6],
@@ -17,6 +20,9 @@ matrixaddition=(matrix,matrixb)=>{
     let row=[];
        for(let j=0;j<matrix[i].length;j++){
        row.push(matrix[i][j]+matrixb[i][j]);
+       if(typeof matrix[i][j]!=='number'||typeof matrixb[i][j]!=='number' ){
+        return "eneter only numbers"
+       }
       
 
     }
@@ -26,16 +32,16 @@ matrixaddition=(matrix,matrixb)=>{
    }
    return result;
 }
-// console.log(matrixaddition(matrix =[
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9]
-// ],
-//  matrixb =[
-//     [10,11,12],
-//     [13,14,15],
-//     [16,17,18]
-// ]))
+console.log(matrixaddition(matrix =[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+],
+ matrixb =[
+    [10,11,12],
+    [13,14,15],
+    [16,17,18]
+]))
 
 // array comparison
 

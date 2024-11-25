@@ -3,6 +3,9 @@
 
 
 approximateDerivate=(x,n,h=1e-5)=>{
+    if(typeof x!=='number'||typeof n!=='number'){
+        return "enter valid numbers"
+    }
 
     const fx=Math.pow(x,n);
     const fxh=Math.pow(x+h,n);

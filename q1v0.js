@@ -1,11 +1,14 @@
 // Write a program to calculate the remainder of two numbers?
 
 remainder=(a,b)=>{
+if(typeof a!=='number'||typeof b!=='number'){
+    return "enter a  valid number "
+}
  let remainder =0;
  remainder=a%b;
  return(remainder);
 }
-remainder(3,2);
+console.log(remainder(10,2));
 
 
 

@@ -9,7 +9,7 @@ checkPrime=(n)=>{
     }
     return true;
 }
-console.log(checkPrime(47));
+console.log(checkPrime(25));
 
 printPrime=(limit)=>{
     let primes=[];

@@ -7,6 +7,9 @@
 
 
 perfectNumber=(num)=>{
+    if(typeof num!=='number'){
+        return "enter a number to check"
+    }
     let divisible=[];
     let sum=0;
     for(let i=0;i<num;i++){
@@ -35,7 +38,7 @@ console.log(perfectNumber(28));
 
 
 test=()=>{
-    let input=[28,55];
+    let input=[28,2];
     let ouput=[true,false]
     for(let i=0;i<input[i];i++){
         let result=perfectNumber(input[i])

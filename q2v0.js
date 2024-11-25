@@ -1,15 +1,21 @@
 // Write a program to find the averagae of an array of numbers?
 
 arrayAverage=(arry)=>{
+    if(!Array.isArray(arry)){
+        return "enter a array to check"
+    }
    let sum=0;
    for(i=0;i<arry.length;i++){
+       if(typeof arry[i]!=='number'){
+        return "enter only numbers"
+       }
        sum=sum+arry[i];
    }
    averagae=sum/arry.length;
    return averagae;
 
 }
-console.log(arrayAverage([6,7,8,9,10]))
+console.log(arrayAverage([7,8,9,10]))
 
 
 

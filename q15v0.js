@@ -3,6 +3,9 @@
 
 
 decimalTobinary=(n)=>{
+  if(typeof n !=='number'){
+    return "enter a valid number"
+  }
   let binery="";
   for(;n>0;n=Math.floor(n/2)){
     let remainder=n%2;
@@ -14,7 +17,7 @@ decimalTobinary=(n)=>{
   return binery;
   
 }
-console.log(decimalTobinary(60));
+console.log(decimalTobinary(3));
 
 
 // test case

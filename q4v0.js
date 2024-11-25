@@ -2,6 +2,9 @@
 
 
 area=(l,w)=>{
+    if(typeof l !=='number'||typeof w !=='number'){
+        return "enter a valid number"
+    }
     let area=0;
     area=l*w;
     return area;
