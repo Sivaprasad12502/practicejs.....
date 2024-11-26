@@ -4,6 +4,16 @@
 
 
 range=(arr)=>{
+if(!Array.isArray(arr)){
+    return "enter elements in array"
+}  
+for(let i=0;i<arr.length;i++){
+    if(typeof arr[i]!=='number'){
+        return "enter only numbers"
+    }  
+
+}
+
 let range=0;
 arr.sort((a,b)=>a-b);
 range=(arr[arr.length-1])-(arr[0])

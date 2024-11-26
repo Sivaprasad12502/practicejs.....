@@ -3,6 +3,9 @@
 
 
 isPalindrome=(str)=>{
+    if(typeof str!=='string'){
+        return "only string are evaluated"
+    }
     let cleanedstr=str.replace(/\s+/g, '').toLowerCase();
     let reversedStr='';
     for(let i=cleanedstr.length-1;i>=0;i--){

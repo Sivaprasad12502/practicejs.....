@@ -1,4 +1,7 @@
 gcd=(a,b)=>{
+    if(typeof a!=='number'||typeof b!=='number'){
+        return "enter only numbers"
+    }
     let smaller;
     if(a>b){
         smaller=b;
@@ -14,6 +17,9 @@ gcd=(a,b)=>{
 }
 
 fraction=(x,y)=>{
+    if(typeof x!=='number' ||typeof y!=='number'){
+        return "enter only numbers"
+    }
   let a=gcd(x,y);
   return `${x/a}/${y/a}`;
 }

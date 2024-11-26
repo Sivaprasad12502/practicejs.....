@@ -3,6 +3,9 @@
 
 
 palindrome=(str)=>{
+   if(typeof str!=="string"){
+      return "enter a string to check"
+   }
    let reversed='';
    for(let i=str.length-1;i>=0;i--){
       reversed=reversed+str[i];
@@ -13,7 +16,7 @@ palindrome=(str)=>{
    return reversed===str;
   
 }
-console.log(palindrome('malayalam'))
+console.log(palindrome("malayalam"))
 
 
 
@@ -23,7 +26,7 @@ console.log(palindrome('malayalam'))
 
 
 test=()=>{
-   let input=['malayalam','hello'];
+   let input=['malayalam','hell0'];
    let output=[true,false];
    for(i=0;i<input.length;i++){
       let result=palindrome(input[i]);

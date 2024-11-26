@@ -3,6 +3,9 @@
 
 
 fact=(n)=>{
+if(typeof n!=='number'){
+    return "enter valid number"
+}
  if(n==0){
     return 1;
  }else{
@@ -10,7 +13,7 @@ fact=(n)=>{
  }
 }
 
-console.log(fact(9))
+console.log(fact(3))
 
 
 // test cases 

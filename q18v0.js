@@ -4,6 +4,9 @@
 
 
 gcd=(a,b)=>{
+    if(typeof a!=='number'||typeof b!=='number'){
+        return "enter a valid number"
+    }
     let smaller
    if(a>b){
     smaller=b
@@ -23,6 +26,9 @@ console.log(gcd(48,18))
 
 
 lcm=(a,b)=>{
+    if(typeof a!=='number'||typeof b!=='number'){
+        return "enter a valid  number"
+    }
     let lcm=(a*b)/gcd(a,b);
     return lcm;
 }

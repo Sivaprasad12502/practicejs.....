@@ -2,6 +2,9 @@
 
 
 checkPrime=(n)=>{
+    if(typeof n!=='number'){
+        return "enter a valid number"
+    }
     for(let i=2;i<n;i++){
         if(n%i===0){
             return false;
@@ -9,9 +12,12 @@ checkPrime=(n)=>{
     }
     return true;
 }
-console.log(checkPrime(25));
+console.log(checkPrime(9));
 
 printPrime=(limit)=>{
+    if(typeof limit!=='number'){
+        return "enter a valid  number"
+    }
     let primes=[];
     for(let i=2;i<limit;i++){
         if(checkPrime(i)){
@@ -24,17 +30,29 @@ printPrime=(limit)=>{
     
 }
 
-console.log(printPrime(50));
+console.log(printPrime(35));
+
+
+arrayEqual=(arr,arr2)=>{
+
+
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]!==arr2[i]){
+            return false
+        }
+    }
+    return true
+}
 
 
 // test case 
 
 test=()=>{
-    let input=[[10],[25]];
-    let ouput=[checkPrime(10),checkPrime(25)];
-    for(let i=0;i<input[i];i++){
-        let result=checkPrime(input[i]);
-        if(result==ouput[i]){
+    let input=[35];
+    let ouput=[[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]]
+    for(let i=0;i<input.length;i++){
+        let result=printPrime(input[i]);
+        if(arrayEqual(result,ouput[i])){
             console.log('test is passed')
         }else{
             console.log('test is failed')

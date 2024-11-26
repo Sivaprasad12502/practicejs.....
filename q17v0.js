@@ -2,6 +2,9 @@
 
 
 gcd=(a,b)=>{
+    if(typeof a!=='number'||typeof b!=='number'){
+        return "enter a valid number"
+    }
     let smaller=[];
     if(a>b){
         smaller=b
@@ -15,7 +18,6 @@ gcd=(a,b)=>{
 
     }
 
-
     
 }
 console.log(gcd(10,5))
@@ -27,7 +29,7 @@ console.log(gcd(10,5))
 
 test=()=>{
     let input=[[48,18],[10,5]];
-    let output=[6,3];
+    let output=[6,5];
     for(let i=0;i<input.length;i++){
         let result=gcd(input[i][0],input[i][1]);
         if(result==output[i]){

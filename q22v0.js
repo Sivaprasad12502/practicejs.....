@@ -4,8 +4,14 @@
 
 
 duplicatArayy=(arr)=>{
+    if(!Array.isArray(arr)){
+        return "enter  elements in  an array "
+    }
     let arrayy=[];
     for(let i=0;i<arr.length;i++){
+        if(typeof arr[i]!=='number'){
+            return "enter numbers only"
+        }
             if(!arrayy.includes(arr[i])){
 
                 arrayy.push(arr[i])

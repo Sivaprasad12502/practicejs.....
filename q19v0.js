@@ -4,6 +4,9 @@
 
 
 vowelsInString=(str)=>{
+   if(typeof str!=='string'){
+    return "enter a  valid string"
+   }
    let vowels=["a","e","i","o","u","A","E","I","O","U"];
    let numberOfvowels=0;
    for(let i=0;i<vowels.length;i++){
@@ -18,7 +21,7 @@ vowelsInString=(str)=>{
    return numberOfvowels;
 
 }
-console.log(vowelsInString('si'));
+console.log(vowelsInString('sovaa'));
 
 
 
